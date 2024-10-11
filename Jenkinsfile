@@ -10,7 +10,7 @@ spec:
   containers:
   - name: awscli
     image: artifactory.cloud.cms.gov/docker/amazon/aws-cli:2.15.19
-    command: [‘cat’]
+    command: ['cat']
     tty: true
   - name: node
     image: node:20.18
@@ -36,7 +36,7 @@ spec:
   // Run linter from Go on server.go
   stages {
     // Runs tests defined in server_test.go
-    stage(‘Node build’) {
+    stage('Node build') {
       steps {
         container(node) {
            sh '''
