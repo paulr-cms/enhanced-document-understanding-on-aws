@@ -1,7 +1,7 @@
 pipeline {
   agent {
     kubernetes {
-      yaml “”"
+      yaml """
 apiVersion: v1
 kind: Pod
 spec:
@@ -30,7 +30,7 @@ spec:
           items:
             - key: .dockerconfigjson
               path: config.json
-“”"
+"""
     }
   }
   // Run linter from Go on server.go
