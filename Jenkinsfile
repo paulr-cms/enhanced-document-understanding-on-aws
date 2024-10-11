@@ -5,7 +5,7 @@ pipeline {
 apiVersion: v1
 kind: Pod
 spec:
-  serviceAccountName: tooling
+  serviceAccountName: jenkins-role
   restartPolicy: Never
   containers:
   - name: awscli
