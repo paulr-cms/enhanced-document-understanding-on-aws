@@ -1,5 +1,5 @@
 {
-  "app": "../pre-build-jars.sh && npx ts-node --prefer-ts-exts bin/dus.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/pipeline.ts",
   "watch": {
     "include": ["**"],
     "exclude": [
@@ -61,6 +61,9 @@
     "app_namespace": "app.idp",
     "app_registry_name": "enhanced-document-understanding",
     "application_type": "AWS-Solutions",
-    "application_trademark_name": "Enhanced Document Understanding on AWS"
+    "application_trademark_name": "Enhanced Document Understanding on AWS",
+    "@aws-cdk/core:permissionsBoundary": {
+       "name": "developer-boundary-policy"
+     }
   }
 }
